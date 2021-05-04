@@ -1,4 +1,4 @@
-package com.example.kafka;
+package kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -12,9 +12,9 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
-public class ConsumerDemo {
+public class ConsumerDemoWithGroups {
     public static void main(String[] args) {
-        Logger logger = LoggerFactory.getLogger(ConsumerDemo.class.getName());
+        Logger logger = LoggerFactory.getLogger(ConsumerDemoWithGroups.class.getName());
 
         String bootstrapServers = "localhost:9092";
         String groupId = "group-1";
